@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      ancho = Number(prompt("Ingresa valor del viewport"));
+
+      if (ancho < 576) {
+        alert(`el valor ${ancho} corresponde a una medida xs`);
+      } else if (ancho >= 576 && ancho <= 768) {
+        alert(`el valor ${ancho} corresponde a una medida sm`);
+      } else if (ancho >= 768 && ancho <= 962) {
+        alert(`el valor ${ancho} corresponde a una medida md`);
+      } else if (ancho > 962) {
+        alert(`el valor ${ancho} corresponde a una medida xl`);
+      } else {
+        alert("Debes ingresar un número");
+      }
+    </script>
+  </body>
+</html>
